@@ -1,6 +1,5 @@
 const { getUsers, getUsersAsync } = require("./service");
 
-// Promise chain version
 function fetchUsersWithPromise() {
     return getUsers()
         .then(users => {
@@ -10,7 +9,7 @@ function fetchUsersWithPromise() {
             }));
         })
         .catch(err => {
-            console.error("Promise Error:", err);
+            console.error("promise err:", err);
         });
 }
 
@@ -22,7 +21,7 @@ async function fetchUsersWithAsync() {
             name: u.name
         }));
     } catch (err) {
-        console.error("Async Error:", err);
+        console.error("async err:", err);
     }
 }
 

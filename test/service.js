@@ -5,7 +5,7 @@ function getUsers() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (!users) {
-                reject("No users found");
+                reject("no users found");
             } else {
                 resolve(users);
             }
@@ -17,7 +17,7 @@ async function getUsersAsync() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (!users) {
-                reject("No users found");
+                reject("no users found");
             } else {
                 resolve(users);
             }
