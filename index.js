@@ -14,7 +14,7 @@ setTimeout(() => {
 console.log("End");
 ////////////////////////////////////////
 // promises
-let myPromise = new Promise((resolve, reject) => { //resolve used when task succsess, else not
+let myPromise = new Promise((resolve, reject) => { //resolve used when task success, else not
   let success = true;
 
   if (success) {
@@ -30,4 +30,7 @@ myPromise
   })
   .catch((error) => {
     console.log(error);
+  })
+  .finally(() => {
+    console.log("🔄 Connection attempt finished.");
   });
